@@ -112,9 +112,10 @@ TensorFlow 的 Compute utilization 比起 caffe 改善非常多。
 
 PyCallGraph
 ![](10.PNG)  
-前述的 profiling tools 只看的到 python front-end 的執行狀況，我們想知道底層 C++ 的執行情況，因此也使用了google-perftools->kcachegrind profiling tools  
+前述的 profiling tools 只看的到 python front-end 的執行狀況，我們想知道底層 C++ 的執行情況，因此也使用了google-perftools -> kcachegrind profiling tools  
 
-google-perftools->kcachegrind
+google-perftools -> kcachegrind  
+
 ![](11.png)
 
 ##6. Try to improve tensorflow  
@@ -125,7 +126,7 @@ rendezvous<span></span>.cc defines protocol between sender and receiver, and it 
 
 tensor.h, tensor<span></span>.cc  declare and define data structures to describe input data and data between layers.   
 
-google-perftools -> kcachegrind  
+google-perftools -> kcachegrind  
 
 #####Original
 8 hidden layers,  
